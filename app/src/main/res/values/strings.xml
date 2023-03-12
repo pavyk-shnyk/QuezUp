@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="Welcome_text">Welcome</string>
+    <string name="Start_text">Start</string>
+    <string name="Name_text">UserName</string>
+
+
 </resources>
+
+
+
