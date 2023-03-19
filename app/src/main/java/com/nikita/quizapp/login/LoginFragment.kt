@@ -10,10 +10,16 @@ import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.nikita.quizapp.R
+import com.nikita.quizapp.helpers.DataManager
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+
+@AndroidEntryPoint
 
 class LoginFragment: Fragment() {
+     @Inject
+     lateinit var datamanager: DataManager
 
-    private var userName: String=""
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -36,7 +42,7 @@ class LoginFragment: Fragment() {
 
         val usertextFeild = view.findViewById<TextView>(R.id.userName_TextFeild)
         usertextFeild.doOnTextChanged { text, start, before, count ->
-            userName = text.toString()
+            datamanager.UserName = text.toString()
            checkButtonEnabled()
         }
 
@@ -44,7 +50,7 @@ class LoginFragment: Fragment() {
 
     private fun checkButtonEnabled(){
         val button = view?.findViewById<Button>(R.id.buttonLogin)
-        button?.isEnabled = !userName.isEmpty()
+        button?.isEnabled = !datamanager.UserName.isEmpty()
     }
 
 }
