@@ -15,7 +15,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-
 class LoginFragment: Fragment() {
      @Inject
      lateinit var datamanager: DataManager

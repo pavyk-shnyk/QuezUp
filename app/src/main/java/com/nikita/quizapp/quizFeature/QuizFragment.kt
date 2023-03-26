@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.nikita.quizapp.R
 import com.nikita.quizapp.helpers.DataManager
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class QuizFragment: Fragment() {
     @Inject
     lateinit var Datamanager: DataManager

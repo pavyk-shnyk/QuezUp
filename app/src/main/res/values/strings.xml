@@ -3,7 +3,7 @@
     <string name="Welcome_text">Welcome</string>
     <string name="Start_text">Start</string>
     <string name="Name_text">UserName</string>
-
+    <string name="Hellow_text">Hellow: %1$s</string>
 
 </resources>
 
