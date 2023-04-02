@@ -4,6 +4,7 @@
     <string name="Start_text">Start</string>
     <string name="Name_text">UserName</string>
     <string name="Hellow_text">Hellow: %1$s</string>
+    <string name="Next_Question">Next</string>
 
 </resources>
 
