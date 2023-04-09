@@ -41,6 +41,7 @@ class LoginFragment: Fragment() {
 
         val usertextFeild = view.findViewById<TextView>(R.id.userName_TextFeild)
         usertextFeild.doOnTextChanged { text, start, before, count ->
+            println("ON CHANGE")
             datamanager.UserName = text.toString()
            checkButtonEnabled()
         }
